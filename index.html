@@ -3,5 +3,16 @@
   <body>
     <p>Hola</p>
     <input type="button" value="clk"/>
+    <script>
+      const configuration = {
+        iceServers: [
+          {
+            urls: "46.222.233.40"
+          }
+        ]
+      }
+      const peerConnection = new RTCPeerConnection(configuration);
+      const dataChannel = peerConnection.createDataChannel();
+    </script>
   </body>
 </html>
